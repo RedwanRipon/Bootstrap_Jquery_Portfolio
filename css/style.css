@@ -1,0 +1,459 @@
+/* import fonts from fonts.css file */
+@import url(./fonts.css);
+
+/* Css Varibles */
+@import url(./partials/_variables.css);
+
+/*import global styling */
+@import url(./partials/_globals.css);
+
+/* Start navigation */
+.header_area .main-menu .navbar img{
+    height: 40px;
+    width: 80px;
+}
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+}
+.header_area .main-menu .navbar{
+    padding: 1rem 2rem ;
+}
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
+}
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text ;
+}
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text ;
+}
+
+/* End navigation */
+
+/* Banner Area */
+.site-main .site-banner{
+    
+}
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+.site-main .site-banner .site-title h3::after{
+    content: "";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+
+}
+.site-main .site-banner .site-title h1{
+    font-size: 2.9rem;
+}
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+/* End Banner Area */
+
+/* Start About Area */
+.site-main .about-area{
+    padding: 2rem 5rem;
+}
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 49px/60px var(--roboto);
+    letter-spacing: 20px;
+} 
+.site-main .about-area .about-title .paragraph > p{
+    padding: .4rem 0;
+}
+/* End About Area */
+
+/* Brand Area */
+.site-main .brand-area{
+    padding: 1rem 3rem;
+    margin-bottom: 4rem;
+}
+.site-main .brand-area .first-row .col-lg-4{
+    display: flex;
+    justify-content: center;
+}
+.site-main .brand-area .first-row .col-lg-4 > .single-brand{
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+.site-main .brand-area .first-row .col-lg-4 > .single-brand > img{
+    width: 50%;
+}
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover > img{
+    filter: brightness(0.15);
+}
+.site-main .brand-area .experience-area{
+    padding-left: 1rem;
+}
+.site-main .brand-area .experience-area span{
+    display: block;
+}
+.site-main .brand-area .experience-area .years-area{
+    background: url(../img/client-info-bg.png) no-repeat 45px 20px;
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 8rem;
+    position: relative;
+}
+.site-main .brand-area .experience-area .bg-panel{
+    position: absolute;
+    left: -190px;top: 0%;
+    background: #e029290a;
+    width: 400px;
+    height: 400px;
+    margin-left: 340px;
+    z-index: -1;
+}
+.site-main .brand-area .experience-area .years-area .years{
+    font: normal bold 84px/40px var(--roboto);
+    color: var(--primary-color2);
+    z-index: 2;
+}
+.site-main .brand-area .experience-area .years-area h2 > span{
+    font: normal 600 22px/32px var(--roboto);
+}
+.site-main .brand-area .experience-area .call-area{
+    padding-left: 10rem;
+}
+/* End Brand Area */
+
+/* Services Area */
+.site-main .services-area{
+    padding: 7rem 2rem;
+}
+.site-main .services-area .services-title{
+    padding: 0 14rem;
+}
+.site-main .services-area .services-title h1{
+    font-size: 35px;
+}
+.site-main > .services-area .services{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+.site-main > .services-area .services:hover{
+    box-shadow: var(--box-shadow);
+}
+
+/* End Services Area */
+
+/* Project Area */
+.site-main .project-area{
+    padding: 4rem 0;
+}
+.site-main .project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--roboto);
+}
+.site-main .project-area .button-group button + button{
+    padding-left: 3rem;
+}
+.site-main .project-area .grid .our-project > .title{
+    font: normal 700 25px/12px var(--roboto);
+}
+.site-main .project-area .grid .our-project .img a:hover img{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+
+}
+
+/* End Project Area */
+
+/*Client Area */
+.site-main .about-area .about-title p{
+    padding: 1rem 7rem;
+}
+.site-main .about-area .client{
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+}
+.site-main .about-area .client .client-img{
+    padding: 2rem;
+}
+.site-main .about-area .client .about-client{
+    padding-top: 2rem;
+}
+.site-main .about-area .client .about-client h4{
+    font: normal 500 21px/20px var(--roboto);
+}
+.site-main .about-area .client .about-client p{
+    font-size: 14px;
+}
+.site-main .about-area .owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span{
+    background: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}
+/* End client Area */
+
+/*Contact Area */
+.site-main .contact-title {
+    padding: 60px 0;
+}
+.site-main .contact-title h2 {
+    font: normal bold 40px/20px var(--roboto);
+    margin-bottom: 20px;
+}
+.site-main .contact-title p {
+    color: #5f7c78;
+}
+.site-main .contact-area .info {
+    padding: 60px;
+    background: #fff;
+    color: #334240;
+    text-align: center;
+    box-shadow: -5px -5px 40px 0 rgba(0, 0, 0, 0.1);
+}
+.site-main .contact-area .info i {
+    font-size: 48px;
+    color: #56e7d0;
+    margin-bottom: 15px;
+}
+.site-main .contact-area .info h4 {
+    font: normal 600 20px/20px var(--roboto);
+}
+.site-main .contact-area .info p {
+    font: normal 18px/20px var(--roboto);
+}
+.site-main .contact-area .info-bg {
+    background: white;
+}
+.site-main .contact-area .contact-form-wrap {
+    box-shadow: 10px -5px 40px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+}
+.site-main .contact-area .contact-form {
+    width: 100%;
+}
+.site-main .contact-area .contact-form label {
+    font-family: var(--roboto);
+    margin-bottom: 5px;
+    color: #9a6de4;
+}
+.site-main .contact-area .contact-form input, .contact .contact-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+}
+.site-main .contact-area .contact-form input::focus, .contact .contact-form textarea::focus {
+    background-color: #1bbca3;
+}
+.site-main .contact-area .contact-form input {
+    padding: 20px 15px;
+    font: normal 500 17px/20px var(--roboto);
+}
+.site-main .contact-area .contact-form textarea {
+    padding: 12px 15px;
+    font: normal 500 17px/20px var(--roboto);
+}
+.site-main .contact-area .contact-form button[type="submit"] {
+    background: #fff;
+    font-family: var(--roboto);
+    border: 2px solid #1bbca3;
+    padding: 10px 24px;
+    color: #1bbca3;
+    transition: 0.4s;
+}
+.site-main .contact-area .contact-form button[type="submit"]:hover {
+    background: #1bbca3;
+    color: #fff;
+}
+
+/* End Contact  me Area */
+
+/* Subscribe me Area */
+.site-main .subscribe-us-area .subscribe{
+    background: url(../img/subscribe-bg.png) no-repeat;
+    padding: 10rem 0;
+    margin: 3rem auto;
+}
+.site-main .subscribe-us-area .subscribe .subscribe-title h4{
+    font: normal 700 30px/30px var(--roboto);
+    color: whitesmoke;
+}
+.site-main .subscribe-us-area .subscribe .subscribe-title .para{
+    color: whitesmoke;
+    padding: 1rem 4rem;
+}
+.site-main .subscribe-us-area .subscribe form .input-textbox input{
+    width: 400px;
+    padding: 1.5 rem 1rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: whitesmoke;
+    font: normal 500 17px/20px var(--roboto);
+}
+.site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder{
+    color: whitesmoke;
+}
+.site-main .subscribe-us-area .subscribe form .btn-submit button{
+    background: whitesmoke;
+    color: black;
+    padding: .7rem 2rem;
+}
+/* End  Subscribe me Area */
+
+/* Footer Area */
+.footer-area {
+    background: #344341;
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-size: 14px;
+}
+.footer-area .footer-top {
+    background: rgb(58, 68, 98);
+    border-bottom: 1px solid #4d635f;
+    padding: 60px 0 30px 0;
+}
+.footer-area .footer-top .footer-info {
+    margin-bottom: 30px;
+}
+.footer-area .footer-top .footer-info h3 {
+    font: normal 700 24px/20px var(--roboto);
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+}
+.footer-area .footer-top .footer-info p {
+    font: normal 500 14px/24px var(--roboto);
+    color: #fff;
+}
+.footer-area .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #58716d;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+.footer-area .footer-top .social-links a:hover {
+    background: #1bbca3;
+    color: #fff;
+    text-decoration: none;
+}
+.footer-area .footer-top h4 {
+    font: normal 600 17px/20px var(--roboto);
+    color: #fff;
+    position: relative;
+    padding-bottom: 12px;
+}
+.footer-area .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+.footer-area .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-area .footer-top .footer-links ul i {
+    padding-right: 5px;
+    color: #56e7d0;
+    font-size: 10px;
+    line-height: 1;
+}
+.footer-area .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+ .footer-area .footer-top .footer-links ul a {
+    color: #fff;
+    transition: 0.3s;
+    display: inline-block;
+    font: normal 14px/20px var(--roboto);
+}
+  .footer-area .footer-top .footer-links ul a:hover {
+    color: #40e4ca;
+    text-decoration: none;
+}
+.footer-area .footer-top .footer-newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 4;
+}
+.footer-area .footer-top .footer-newsletter form input[type="email"] {
+    border: 0;
+    padding: 4px;
+    width: calc(100% - 110px);
+}
+.footer-area .footer-top .footer-newsletter form input[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #1bbca3;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 4;
+}
+.footer-area .footer-top .footer-newsletter form input[type="submit"]:hover {
+    background: #158f7c;
+}
+.footer-area .copyright {
+    text-align: center;
+    padding-top: 30px;
+    font: normal 500 17px/20px var(--roboto);
+}
+.footer-area .credits {
+    padding-top: 10px;
+    text-align: center;
+    font: normal 13px/20px var(--roboto);
+    color: #fff;
+}
+
+/* End Footer Area */
